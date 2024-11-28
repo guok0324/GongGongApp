@@ -92,8 +92,8 @@ const LoginPage = ({navigation}: NavigationProps): React.JSX.Element => {
         }
     }
 
-    const idInput = <MyInput initText="请输入你的学号" onSendDataToParent={handleUsername}/>
-    const pwdInput = <MyInput initText="请输入教务系统密码" onSendDataToParent={handlePassword} visibleProp={true}/>
+    const idInput = <MyInput initText="同学，报下学号，给你加学分" onSendDataToParent={handleUsername}/>
+    const pwdInput = <MyInput initText="把你的密码写上来" onSendDataToParent={handlePassword} visibleProp={true}/>
 
     // 屏幕上方alert块
     const alertModule = (
@@ -292,7 +292,7 @@ const ButtonSection = ({handleLogin, navigation}: { handleLogin: any, navigation
     return (
         <View style={buttonStyleSheet.buttonContainer}>
             <View style={{display: 'flex', flexDirection: 'row', marginVertical: 10}}>
-                <Text style={buttonStyleSheet.introText}>登录代表你已同意</Text>
+                <Text style={buttonStyleSheet.introText}>登录代表你同意了我的请求/Text>
                 <Pressable onPress={() => navigation.navigate('UserAgreementPage')}>
                     <Text style={[buttonStyleSheet.introText, buttonStyleSheet.infoText]}>用户协议</Text>
                 </Pressable>
@@ -302,7 +302,7 @@ const ButtonSection = ({handleLogin, navigation}: { handleLogin: any, navigation
                 </Pressable>
             </View>
             <Pressable style={buttonStyleSheet.loginButton} onPress={onLogin} disabled={disabled}>
-                <Text style={{color: '#fff', fontWeight: '600', fontSize: 15}}>登录</Text>
+                <Text style={{color: '#fff', fontWeight: '600', fontSize: 15}}>开启红🐷之旅</Text>
             </Pressable>
         </View>
     )
