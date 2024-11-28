@@ -95,7 +95,7 @@ const InfoPage = ({navigation}: NavigationProps) => {
                         alignSelf: 'flex-start',
                         fontWeight: '600'
                     }}
-                >要注意下面这些哦</Text>
+                >小Tips</Text>
 
                 {/* 更多信息 */}
                 <View style={[ss.infoContainer, {paddingTop: 5, paddingBottom: 40, paddingHorizontal: 0}]}>
